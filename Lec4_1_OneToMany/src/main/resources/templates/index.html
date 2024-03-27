@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>Numbers and Largeeee Numbers</h1>
+	<table th:if="${studentList != null}">
+<tr th:each="s : ${studentList}">
+<td th:text="${s.name}">Frank</td>
+<td th:text="${s.account.accountNumber}">1234</td>
+<td th:text="${s.account.balance}">500.00</td>
+<td th:text="${s.account.status}"></td>
+
+
+</tr>
+</table>
+</body>
+</html>
